@@ -17,5 +17,5 @@ import org.springframework.stereotype.Component;
 @Component
 public interface UserMapper extends BaseMapper<User> {
     @Select("select * from orm_user")
-    void sqlPageSelect(Page<User> page);
+    Page<User> sqlPageSelect(Page<User> page);
 }

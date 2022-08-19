@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.xkcoding</groupId>
+  <groupId>com.zzzzzzzs</groupId>
   <artifactId>spring-boot-demo</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <modules>
@@ -14,7 +14,7 @@
   <packaging>pom</packaging>
 
   <name>spring-boot-demo</name>
-  <url>http://xkcoding.com</url>
+  <url>https://github.com/zzzzzzzs</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
