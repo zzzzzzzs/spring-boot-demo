@@ -34,6 +34,21 @@
                 <el-col :span="12">
                     <el-card>
                         <div slot="header">
+                            <span>Kafka 推送消息</span>
+                        </div>
+                        <el-table size="small" border :data="server.msg" style="width: 100%">
+                            <el-table-column prop="key" label="属性">
+                            </el-table-column>
+                            <el-table-column prop="value" label="值">
+                            </el-table-column>
+                        </el-table>
+                    </el-card>
+                </el-col>
+            </el-row>
+            <el-row :gutter="20">
+                <el-col :span="12">
+                    <el-card>
+                        <div slot="header">
                             <span>CPU信息</span>
                         </div>
                         <el-table size="small" border :data="server.cpu" style="width: 100%">
@@ -165,6 +180,7 @@
                     this.stompClient = {};
                     this.socket = {};
                     this.isConnected = false;
+                    this.server.msg = [];
                     this.server.cpu = [];
                     this.server.mem = [];
                     this.server.jvm = [];

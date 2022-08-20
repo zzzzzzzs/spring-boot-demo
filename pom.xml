@@ -11,6 +11,7 @@
     <module>demo-helloworld</module>
     <module>demo-orm-mybatis-plus</module>
     <module>demo-kafka-websocket</module>
+    <module>demo-mq-kafka</module>
   </modules>
   <packaging>pom</packaging>
 
