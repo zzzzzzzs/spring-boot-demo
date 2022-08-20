@@ -1,6 +1,6 @@
 # spring-boot-demo-kafka-websocket
 
-> 此 demo 主要演示了 Spring Boot 如何集成 WebSocket，实现后端主动往前端推送数据。网上大部分websocket的例子都是聊天室，本例主要是推送服务器状态信息。前端页面基于vue和element-ui实现。
+> 此 demo 主要演示了 Spring Boot 如何集成 kafka 和 WebSocket，实现 Springboot 消费 Kafka 中的数据然后推送到页面上。
 
 ## 1. 代码
 
