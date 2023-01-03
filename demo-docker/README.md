@@ -10,6 +10,8 @@
 
 ![image-20230103193105438](assets/image-20230103193105438.png)
 
+随后就可以运行 Dockerfile  了
+
 ## Linux 中部署到 docker 中
 
 ```dockerfile
