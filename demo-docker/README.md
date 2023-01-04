@@ -15,6 +15,7 @@
 ## Linux 中部署到 docker 中
 
 ```dockerfile
-docker build .
+docker build -t docker-demo:v1.0 .
 ```
 
+- -t : 容器名字
