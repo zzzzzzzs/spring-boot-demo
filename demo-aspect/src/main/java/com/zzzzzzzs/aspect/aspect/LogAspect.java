@@ -1,6 +1,7 @@
 package com.zzzzzzzs.aspect.aspect;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -23,7 +24,7 @@ public class LogAspect {
     /**
      * 执行拦截
      */
-    @Around("execution(* com.zzzzzzzs.aspect.*.*(..))")
+    @Around("execution(* com.zzzzzzzs.aspect.*..*(..))")
     public Object doInterceptor(ProceedingJoinPoint point) throws Throwable {
         StopWatch stopWatch = new StopWatch();
         stopWatch.start();

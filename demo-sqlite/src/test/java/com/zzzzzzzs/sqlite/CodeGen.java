@@ -15,7 +15,7 @@ public class CodeGen {
         String projectPath = System.getProperty("user.dir");
         String outDir = projectPath +"/src/main/java";
         String outXmlDir = projectPath +"/src/main/resources/mapper/";
-        DataSourceConfig.Builder build = new DataSourceConfig.Builder("jdbc:sqlite:D:/home/sqlite3/test.db", "", "")
+        DataSourceConfig.Builder build = new DataSourceConfig.Builder("jdbc:sqlite:demo-sqlite/src/main/resources/db/test.db", "", "")
                 .dbQuery(new SqliteQuery())
                 .schema("main")
                 .typeConvert(new SqliteTypeConvert());
@@ -25,7 +25,7 @@ public class CodeGen {
                     builder.author("zzzzzzzs") // 设置作者
                             .dateType(DateType.ONLY_DATE)
                             .enableSwagger() // 开启 swagger 模式
-                            .fileOverride() // 覆盖已生成文件
+//                            .fileOverride() // 覆盖已生成文件
                             .outputDir(outDir); // 指定输出目录
                 })
                 .packageConfig(builder -> {
