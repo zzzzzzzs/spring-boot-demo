@@ -1,4 +1,4 @@
-package com.zzzzzzzs.helloworld;
+package com.zzzzzzzs.docker;
 
 import cn.hutool.core.util.StrUtil;
 import org.springframework.boot.SpringApplication;
@@ -17,10 +17,10 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @SpringBootApplication
 @RestController
-public class SpringBootDemoDocker {
+public class DemoDockerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootDemoDocker.class, args);
+        SpringApplication.run(DemoDockerApplication.class, args);
     }
 
     /**
