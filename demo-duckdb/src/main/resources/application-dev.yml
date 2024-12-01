@@ -1,0 +1,28 @@
+mybatis-plus:
+  mapper-locations:
+    - classpath:mapper/*.xml
+  # 配置slq打印日志
+  configuration:
+    #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    call-setters-on-nulls: true
+    jdbc-type-for-null: null
+  type-aliases-package: com.zzzzzzzs.duckdb.entity
+  #配置逻辑删除
+  global-config:
+    db-config:
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+      id-type: auto
+    banner: false
+
+
+# 应用服务 WEB 访问端口
+server:
+  port:8080
+spring:
+  datasource:
+    url: "jdbc:duckdb:"  # duckdb内存模式
+    # url: "jdbc:duckdb:/tmp/my_database" # 文件模式
+    driver-class-name: org.duckdb.DuckDBDriver

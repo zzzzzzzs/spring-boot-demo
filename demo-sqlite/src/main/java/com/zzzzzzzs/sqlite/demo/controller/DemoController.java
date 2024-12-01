@@ -1,6 +1,5 @@
 package com.zzzzzzzs.sqlite.demo.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,6 +7,7 @@ import com.zzzzzzzs.sqlite.demo.entity.User;
 import com.zzzzzzzs.sqlite.demo.service.IUserService;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @RestController
 @RequestMapping("/demo")
@@ -28,6 +28,12 @@ public class DemoController {
         User user = userService.getById(id);
         System.out.println("user="+user);
         System.out.println("get");
+        return user;
+    }
+
+    @GetMapping("/getall")
+    public Object getall(){
+        List<User> user = userService.list();
         return user;
     }
 

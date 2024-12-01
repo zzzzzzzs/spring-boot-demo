@@ -1,7 +1,6 @@
 mybatis-plus:
   mapper-locations:
     - classpath:mapper/*.xml
-    - classpath*:mapper/*/*/*.xml
   # 配置slq打印日志
   configuration:
     #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
