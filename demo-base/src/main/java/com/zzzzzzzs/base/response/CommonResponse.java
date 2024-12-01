@@ -1,4 +1,4 @@
-package com.zzzzzzzs.rocksdb.dto;
+package com.zzzzzzzs.base.response;
 
 
 import lombok.AllArgsConstructor;

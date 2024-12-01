@@ -1,6 +1,6 @@
 package com.zzzzzzzs.rocksdb.controller;
 
-import com.zzzzzzzs.rocksdb.dto.CommonResponse;
+import com.zzzzzzzs.base.response.CommonResponse;
 import com.zzzzzzzs.rocksdb.dto.RocksDBDTO;
 import com.zzzzzzzs.rocksdb.utils.RocksDBUtil;
 import io.swagger.annotations.Api;
