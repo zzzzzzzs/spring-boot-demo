@@ -1,0 +1,28 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /demo
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#spring:
+#  quartz:
+#    job-store-type: jdbc # 使用数据库存储任务
+#    jdbc:
+#      initialize-schema: always # 自动初始化表（生产环境推荐使用脚本）
+#    properties:
+#      org:
+#        quartz:
+#          scheduler:
+#            instanceName: MyScheduler
+#          jobStore:
+#            class: org.quartz.impl.jdbcjobstore.JobStoreTX
+#            driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+#            tablePrefix: QRTZ_
+#          threadPool:
+#            threadCount: 10
+

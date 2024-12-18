@@ -17,6 +17,8 @@
         <module>demo-duckdb</module>
         <module>demo-actuator</module>
         <module>demo-globalexcept</module>
+        <module>demo-xxl-job</module>
+        <module>demo-quartz</module>
     </modules>
     <packaging>pom</packaging>
 
