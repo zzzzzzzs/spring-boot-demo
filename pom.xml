@@ -19,6 +19,7 @@
         <module>demo-globalexcept</module>
         <module>demo-xxl-job</module>
         <module>demo-quartz</module>
+        <module>demo-ai-chat</module>
     </modules>
     <packaging>pom</packaging>
 
